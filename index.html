@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block content %}
+
+
+<h2>Let's Test Our Spacy Model</h2>
+<p>Please upload your Resume to extract information</p>
+
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data" action="/predict">
+        <label for="imageUpload" class="upload-label">
+            Upload Resume
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".pdf"><br>
+        <button type="submit"> Submit </button>
+    </form>
+
+
+</div>
+
+{% endblock %}
